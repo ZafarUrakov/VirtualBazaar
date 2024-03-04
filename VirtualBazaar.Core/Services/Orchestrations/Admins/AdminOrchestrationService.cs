@@ -89,8 +89,8 @@ namespace VirtualBazaar.Core.Services.Orchestrations.Admins
             if (await CheckProductAsync(update))
                 return;
             
-            if (await DeleteProductAsync(update))
-                return;
+            // if (await DeleteProductAsync(update))
+                // return;
 
             if (await BackAsync(update))
                 return;
