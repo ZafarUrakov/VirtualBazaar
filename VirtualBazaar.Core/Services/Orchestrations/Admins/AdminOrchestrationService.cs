@@ -80,8 +80,8 @@ namespace VirtualBazaar.Core.Services.Orchestrations.Admins
             if (await CategoriesAsync(update))
                 return;
 
-            if (await DeleteCategoryAsync(update))
-                return;
+            //if (await DeleteCategoryAsync(update))
+            //    return;
 
             if (await ProductsAsync(update))
                 return;
