@@ -7,17 +7,17 @@ namespace VirtualBazaar.Core.Services.Orchestrations.Admins
     public partial class AdminOrchestrationService
     {
         private const string deleteProductCommand = "Delete product ❌";
-        private async ValueTask<bool> DeleteProductAsync(Update update)
-        {
-            var admin = this.adminService.RetrieveAllAdmins()
-                .FirstOrDefault(u => u.TelegramId == update.Message.Chat.Id);
+        // private async ValueTask<bool> DeleteProductAsync(Update update)
+        // {
+        //     var admin = this.adminService.RetrieveAllAdmins()
+        //         .FirstOrDefault(u => u.TelegramId == update.Message.Chat.Id);
 
-            if (admin is not null)
-            { 
+        //     if (admin is not null)
+        //     { 
             
-            }
+        //     }
 
-            return false;
-        }
+        //     return false;
+        // }
     }
 }
